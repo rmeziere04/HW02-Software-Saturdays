@@ -1,0 +1,30 @@
+    1  clear
+    2  history
+    3  net-tools --version
+    4  sudo apt install net-tools
+    5  ifconfig
+    6  touch ifconfig.txt
+    7  ifconfig > ifconfig.txt
+    8  cat inconfig.txt
+    9  cat ifconfig.txt
+   10  touch ifconfig_v4.txt
+   11  grep "inet " ifconfig.txt
+   12  grep "inet " ifconfig.txt > ifconfig_v4.txt
+   13  cat ifconfig_v4.txt
+   14  grep \d+\.\d+\.\d+\.\d+
+   15  grep \d+\.\d+\.\d+\.\d+ ipconfig_v4.txt
+   16  grep \d+\.\d+\.\d+\.\d+ ifconfig_v4.txt
+   17  grep '[0-9]+\.[0-9]+\.[0-9]+\.[0-9]+' ifconfig_v4.txt
+   18  grep -E '[0-9]+\.[0-9]+\.[0-9]+\.[0-9]+' ifconfig_v4.txt
+   19  man grep
+   20  grep -Eo '[0-9]+\.[0-9]+\.[0-9]+\.[0-9]+' ifconfig_v4.txt
+   21  touch ip.txt
+   22  grep -Eo '[0-9]+\.[0-9]+\.[0-9]+\.[0-9]+' ifconfig_v4.txt > ip.txt
+   23  cat ip.txt
+   24  man sort
+   25  man sort -n ip.txt
+   26  sort -n ip.txt
+   27  ipconfig | grep "inet " | grep -Eo '[0-9]+\.[0-9]+\.[0-9]+\.[0-9]+' | sort -n > sorted_ip.txt
+   28  cat sorted_ip.txt
+   29  touch commands.txt
+   30  history > commands.txt
